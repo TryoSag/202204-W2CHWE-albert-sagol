@@ -1,0 +1,34 @@
+{
+  "name": "202204-w2chwe-albert-sagol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install",
+    "to_compile": "npx sass sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryoSag/202204-W2CHWE-albert-sagol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TryoSag/202204-W2CHWE-albert-sagol/issues"
+  },
+  "homepage": "https://github.com/TryoSag/202204-W2CHWE-albert-sagol#readme",
+  "dependencies": {
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^7.0.0",
+    "jest": "^27.5.1"
+  }
+}
