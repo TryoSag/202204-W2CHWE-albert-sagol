@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "prepare": "husky install",
-    "to_compile": "npx sass sass/style.scss css/style.css"
+    "to_compile": "npx sass sass/style.scss css/style.css",
+    "dejavu": "npx sass sass/style.scss css/style.css --watch"
   },
   "repository": {
     "type": "git",
