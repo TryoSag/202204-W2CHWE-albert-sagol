@@ -1,8 +1,8 @@
 const aliveAround = (axisX, axisY, limitAxisX, limitAxisY, screenArray) => {
   let minIndexX = -1;
   let minIndexY = -1;
-  let maxIndexX = 2;
-  let maxIndexY = 2;
+  let maxIndexX = 1;
+  let maxIndexY = 1;
   let neighborAlive = 0;
 
   if (axisX - 1 < 0) {
@@ -12,14 +12,14 @@ const aliveAround = (axisX, axisY, limitAxisX, limitAxisY, screenArray) => {
     minIndexY = 0;
   }
   if (axisX + 1 > limitAxisX) {
-    maxIndexX = 1;
+    maxIndexX = 0;
   }
   if (axisY + 1 > limitAxisY) {
-    maxIndexY = 1;
+    maxIndexY = 0;
   }
 
-  for (let x = minIndexX; x < maxIndexX; x++) {
-    for (let y = minIndexY; y < maxIndexY; y++) {
+  for (let x = minIndexX; x <= maxIndexX; x++) {
+    for (let y = minIndexY; y <= maxIndexY; y++) {
       if (screenArray[axisX + x][axisY + y]) {
         neighborAlive++;
       }
